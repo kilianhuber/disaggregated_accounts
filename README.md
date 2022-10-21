@@ -10,13 +10,7 @@ This repo houses the scripts, assets and source files for [Disaggregated Account
 
 - Clone the repo: `git clone https://github.com/jasonjiajs/disaggregated_accounts.git`.
 
-### 2a. Basic Usage
-
-- Place the relevant images and data in `src/assets`.
-- Edit the HTML and CSS files in `/dist`. These files are the final outputs, and all other files can be ignored.
-- Open the corresponding `.html` files in your web browser to preview changes.
-
-### 2b. Advanced Usage
+### 2. Making changes
 
 - Download and install [Node.js](https://nodejs.org/en/), which will also install npm.
 - Check that you have Node.js and npm installed: `node -v`, `npm -v`.
@@ -25,9 +19,10 @@ This repo houses the scripts, assets and source files for [Disaggregated Account
 - Run `npm start`. This should open up a preview of the website in your default browser. It will also automatically watch for changes to core files, and live reload the browser when changes are saved.
 - Place the relevant images and data in `src/assets`.
 - Edit the PUG files in `src/pug` and the SCSS files in `src/scss`. The JS files in `src/js` and `scripts` can be ignored.
-- View changes in your browser and iterate accordingly.
+- These edits will change the final outputs: the assets, HTML files and CSS files in `/dist`.
+- View changes in your browser and iterate accordingly. Note that you can preview changes by opening the corresponding HTML files.
 
-#### npm Scripts
+#### npm scripts
 
 You can view the `package.json` file to see which scripts are included.
 

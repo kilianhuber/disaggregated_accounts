@@ -10,9 +10,9 @@ header.masthead {
     // if the image name change, make sure to update the url path below!
 
     background: linear-gradient(to bottom,
-        #{fade-out($black, 0.6)} 0%,
-        #{fade-out($black, 0.8)} 100%),
-    url("../assets/img/water_flows.jpg");
+        #{fade-out($black, 0.9)} 0%,
+        #{fade-out($black, 1)} 100%),
+    url("../assets/img/main_plot_white.jpg");
 
     background-position: center;
     background-repeat: no-repeat;

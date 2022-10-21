@@ -1,6 +1,6 @@
 {
     "title": "Creative",
-    "name": "disaggregated_accounts",
+    "name": "startbootstrap-creative",
     "version": "7.0.6",
     "scripts": {
         "build": "npm run clean && npm run build:pug && npm run build:scss && npm run build:scripts && npm run build:assets",
@@ -31,11 +31,11 @@
     "license": "MIT",
     "author": "Start Bootstrap",
     "contributors": [
-        "Jason Jia"
+        "David Miller (https://davidmiller.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/jasonjiajs/disaggregated_accounts"
+        "url": "https://github.com/StartBootstrap/startbootstrap-creative.git"
     },
     "dependencies": {
         "bootstrap": "5.1.3"

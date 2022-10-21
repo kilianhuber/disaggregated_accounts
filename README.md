@@ -1,10 +1,8 @@
 # Disaggregated Accounts
 
-This repo houses the [Disaggregated Accounts site](https://www.disaggregatedaccounts.com/).
+This repo houses the scripts, assets and source files for [Disaggregated Accounts](https://www.disaggregatedaccounts.com/).
 
-## Preview
-
-![image](https://assets.startbootstrap.com/img/screenshots/themes/creative.png)
+![image](src/assets/img/homepage.PNG)
 
 ## Usage
 
@@ -43,7 +41,11 @@ You can view the `package.json` file to see which scripts are included.
 - `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
 
 ## Acknowledgements
+
 This website is adapted from [Start Bootstrap - Creative](https://github.com/startbootstrap/startbootstrap-creative).
+
 ## Copyright and License
 
-Copyright 2022 Disaggregated Accounts. Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
+Copyright © 2022 - Disaggregated Accounts. All rights reserved.
+
+Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.

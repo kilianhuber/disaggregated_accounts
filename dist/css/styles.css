@@ -11299,7 +11299,7 @@ body {
 }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 4rem 0 1rem 0;
 }
 
 .text-white-75 {
@@ -11325,6 +11325,14 @@ hr.divider {
 
 hr.divider-light {
   background-color: #fff;
+}
+
+hr.divider-small {
+  height: 0.2rem;
+  max-width: 1rem;
+  margin: 0.7rem auto;
+  background-color: #fff;
+  opacity: 0.7;
 }
 
 #mainNav {

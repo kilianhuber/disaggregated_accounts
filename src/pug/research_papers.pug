@@ -8,10 +8,10 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Disaggregated Accounts (Title)
+        title Disaggregated Accounts
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
 
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
@@ -56,30 +56,34 @@ html(lang='en')
         section#services.page-section
             .container.px-4.px-lg-5
                 h2.text-center.mt-0 Paper
-                h4.text-center.mt-0 Authors
+                h3.text-center.mt-0 Authors
                 h4.text-center.mt-0 Description 
                 h5.text-center.mt-0 Additional Information
                 hr.divider
 
-        // footer.py-5
-        // footer.py-5
-        // footer.py-5
-        // footer.py-5
-        // footer.py-2
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Paper
+                h3.text-center.mt-0 Authors
+                h4.text-center.mt-0 Description 
+                h5.text-center.mt-0 Additional Information
+                hr.divider
+
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Paper
+                h3.text-center.mt-0 Authors
+                h4.text-center.mt-0 Description 
+                h5.text-center.mt-0 Additional Information
+                hr.divider
+
+            .container.px-4.px-lg-5
+                h2.text-center.mt-0 Paper
+                h3.text-center.mt-0 Authors
+                h4.text-center.mt-0 Description 
+                h5.text-center.mt-0 Additional Information
+                hr.divider
 
         // Footer
-        footer.bg-light.py-3
-            .container.px-4.px-lg-5
-                .small.text-center.text-muted
-                    | Copyright &copy; 2022 - Disaggregated Accounts. All rights reserved.
+        include includes/footer.pug
 
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-        // SimpleLightbox plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        // Scripts
+        include includes/scripts.pug

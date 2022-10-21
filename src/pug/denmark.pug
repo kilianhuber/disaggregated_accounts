@@ -8,10 +8,10 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Disaggregated Accounts (Title)
+        title Disaggregated Accounts
 
         // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
 
         // Bootstrap Icons
         link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
@@ -46,78 +46,10 @@ html(lang='en')
                             a.nav-link(href='research_papers.html') Research Papers
 
         // Masthead
-        header.masthead_short
-            .container.px-4.px-lg-5.h-100
-                .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
-                    .col-lg-8.align-self-end
-                        h1.text-white.font-weight-bold Denmark 🇩🇰
+        include includes/denmark_masthead.pug
     
-        // Services
-        section#services.page-section
-            .container.px-4.px-lg-5
-                h2.text-center.mt-0 Denmark Data
-                hr.divider
-                table(style='width:80%', border='0', class='center')
-                    tr
-                        th #
-                        th File
-                        th Description
-                        th Visualize
-                        th Download
-                    tr
-                        td 1
-                        td Consumer matrix
-                        td Description 1
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='') csv
-                            a(href='') twb
-                    tr
-                        td 2
-                        td Labour income matrix
-                        td Description 2
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='') csv
-                            a(href='') twb
-                    tr
-                        td 3
-                        td Input-output matrix
-                        td Description 3
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='') csv
-                            a(href='') twb
-                    tr
-                        td 4
-                        td Self employment matrix
-                        td Description 4
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='') csv
-                            a(href='') twb
-                    tr
-                        td 5
-                        td Producer characteristics
-                        td Description 5
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='../assets/data/characteristics_firms.xlsx' download) csv
-                            a(href='') twb
-                    tr
-                        td 6
-                        td Consumer characteristics
-                        td Description 6
-                        td 
-                            a(href='') Map
-                        td 
-                            a(href='') csv
-                            a(href='') twb
+        // Denmark table
+        include includes/denmark_table.pug
 
         // Services
         section#services.page-section
@@ -148,21 +80,12 @@ html(lang='en')
                                 i.bi-heart.fs-1.text-primary
                             h3.h4.mb-2 Name
                             p.text-muted.mb-0 Description
+                hr.divider
+                hr.divider
 
 
         // Footer
-        footer.bg-light.py-3
-            .container.px-4.px-lg-5
-                .small.text-center.text-muted
-                    | Copyright &copy; 2022 - Disaggregated Accounts. All rights reserved.
-
-        // Bootstrap core JS
-        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
-
-        // SimpleLightbox plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js')
-
-        // Core theme JS
-        script(src='js/scripts.js')
-
-        script(src='https://cdn.startbootstrap.com/sb-forms-latest.js')
+        include includes/footer.pug
+        
+        // Scripts
+        include includes/scripts.pug

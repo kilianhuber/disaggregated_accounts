@@ -13,3 +13,11 @@ hr.divider {
 hr.divider-light {
     background-color: $white;
 }
+
+hr.divider-small {
+    height: 0.2rem;
+    max-width: 1rem;
+    margin: 0.7rem auto;
+    background-color: $white;
+    opacity: 0.7;
+}

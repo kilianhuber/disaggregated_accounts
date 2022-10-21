@@ -10,9 +10,9 @@ header.masthead {
     // if the image name change, make sure to update the url path below!
 
     background: linear-gradient(to bottom,
-        #{fade-out($brown, 0.2)} 0%,
-        #{fade-out($brown, 0.2)} 100%),
-    url("../assets/img/bg-masthead.jpg");
+        #{fade-out($black, 0.6)} 0%,
+        #{fade-out($black, 0.8)} 100%),
+    url("../assets/img/water_flows.jpg");
 
     background-position: center;
     background-repeat: no-repeat;
@@ -41,6 +41,48 @@ header.masthead {
     @include media-breakpoint-up(xl) {
         h1 {
             font-size: 3.5rem;
+        }
+    }
+}
+
+header.masthead_short {
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+
+    // replace the masthead.jpg image in the /assets/img directory to change the image
+    // if the image name change, make sure to update the url path below!
+
+    background: linear-gradient(to bottom,
+        #{fade-out($gray-900, 0.1)} 0%,
+        #{fade-out($gray-500, 0.1)} 100%);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 10vh; // 4.4
+        min-height: 10rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        p {
+            font-size: 1.15rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        h1 {
+            font-size: 2.5rem;
         }
     }
 }

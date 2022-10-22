@@ -2,46 +2,21 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Disaggregated Accounts
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
-
-        // Bootstrap Icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
-
-        // SimpleLightbox plugin CSS
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        // Head
+        include includes/head.pug
 
     body#page-top
 
         // Navigation
         nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top.py-3
             .container.px-4.px-lg-5
-                a.navbar-brand(href='index.html') Disaggregated Economic Accounts
+                a.navbar-brand(href='index.html') Home
                 button.navbar-toggler.navbar-toggler-right(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     span.navbar-toggler-icon
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.ms-auto.my-2.my-lg-0
-                        li.nav-item.dropdown
-                            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
-                                | Countries
-                            ul.dropdown-menu(aria-labelledby='navbarDropdown')
-                                li
-                                    a.dropdown-item(href='#page-top') Denmark
+                        li.nav-item
+                            a.nav-link(href='#page-top') Accounts for Denmark 
                         li.nav-item
                             a.nav-link(href='research_papers.html') Research Papers
 
@@ -55,7 +30,7 @@ html(lang='en')
         section#services.page-section
             .container.px-4.px-lg-5
                 .text-center
-                    h2.text-center.mt-0 Denmark Research Team
+                    h2.text-center.mt-0 Research Team
                     // p.lead.fw-normal.text-muted.mb-5 Dedicated to quality and your success
                     hr.divider
                 .row.gx-5.row-cols-1.row-cols-sm-2.row-cols-xl-5.justify-content-center
@@ -63,61 +38,62 @@ html(lang='en')
                         .text-center
                             a(href='https://sites.google.com/site/asgerlauandersen/' target='_blank')
                                 img.img-fluid.rounded-circle.mb-4.px-4(src='assets/img/research_team/asger_andersen.jpg', alt='...')
-                            h5.text-center.mt-0 Asger Andersen
+                                h5.text-center.mt-0 Asger Andersen
                             p.text-muted.mb-0 University of Copenhagen
                     .col.mb-5.mb-5.mb-xl-0
                         .text-center
                             a(href='https://www.economics.ku.dk/staff/phd_kopi/?pure=en/persons/436457' target='_blank')
                                 img.img-fluid.rounded-circle.mb-4.px-4(src='assets/img/research_team/emil_toft_hansen.jpg', alt='...')
-                            h5.text-center.mt-0 Emil Toft Hansen
+                            a(href='https://www.economics.ku.dk/staff/phd_kopi/?pure=en/persons/436457' target='_blank')
+                                h5.text-center.mt-0 Emil Toft Hansen
                             p.text-muted.mb-0 University of Copenhagen
                     .col.mb-5.mb-5.mb-sm-0
                         .text-center
                             a(href='https://www.kilianhuber.org/' target='_blank')
                                 img.img-fluid.rounded-circle.mb-4.px-4(src='assets/img/research_team/kilian_huber.jpg', alt='')
-                            h5.text-center.mt-0 Kilian Huber
-                            p.text-muted.mb-0 University of Chicago Booth School of Business
+                                h5.text-center.mt-0 Kilian Huber
+                            p.text-muted.mb-0 University of Chicago
                     .col.mb-5
                         .text-center
                             a(href='https://www.nielsjohannesen.net/' target='_blank')
                                 img.img-fluid.rounded-circle.mb-4.px-4(src='assets/img/research_team/niels_johannesen.jpg', alt='...')
-                            h5.text-center.mt-0 Niels Johannesen
+                                h5.text-center.mt-0 Niels Johannesen
                             p.text-muted.mb-0 University of Copenhagen
                     .col.mb-5
                         .text-center
                             a(href='https://scholar.harvard.edu/straub/home' target='_blank')
                                 img.img-fluid.rounded-circle.mb-4.px-4(src='assets/img/research_team/ludwig_straub.jpg', alt='...')
-                            h5.text-center.mt-0 Ludwig Straub
+                                h5.text-center.mt-0 Ludwig Straub
                             p.text-muted.mb-0 Harvard University
 
         section#services.page-section
             .container.px-4.px-lg-5
                 .text-center
                     h2.text-center.mb-4 Acknowledgements
-                    p.lead.fw-normal.text-muted.mb-5 We are extremely grateful to the Becker Friedman Institute, the Danish Innovation Fund, the Danish National Research Foundation, Domenic and Molly Ferrante, the Economic Policy Research Network, the Fama-Miller Center for Research in Finance, the Washington Center for Equitable Growth, and the William S. Fishman Fund.
+                    p.lead.fw-normal.text-muted.mb-5 We are grateful to the Becker Friedman Institute, the Danish Innovation Fund, the Danish National Research Foundation, Domenic and Molly Ferrante, the Economic Policy Research Network, the Fama-Miller Center for Research in Finance, the Washington Center for Equitable Growth, and the William S. Fishman Fund.
                 .row.gx-5.row-cols-1.row-cols-sm-2.row-cols-xl-4.justify-content-center.align-items-center
-                    .col.mb-5.mb-5.mb-xl-0
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/bfi.svg', alt='...')
-                    .col.mb-5.mb-5.mb-xl-0
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
-                            img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/danish_innovation_fund.jpg', alt='')
-                    .col.mb-5.mb-5.mb-xl-0
+                            img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/danish_innovation_fund.png', alt='')
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/dnrf.jpg', alt='...')
-                    .col.mb-5
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
-                            img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/domenic_and_molly_ferrante.jpg', alt='...')
-                    .col.mb-5
+                            img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/harvard.jpg', alt='...')
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/eprn.png', alt='...')
-                    .col.mb-5.mb-5.mb-xl-0
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/fama_miller_center.jpg', alt='...')
-                    .col.mb-5
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/washington_center_for_equitable_growth.svg', alt='...')
-                    .col.mb-5
+                    .col.mb-5.mb-5.mb-xl-4
                         .text-center
                             img.img-fluid.mb-4.px-4(src='assets/img/acknowledgements/fishman_fund.png', alt='...')
                 hr.divider-small

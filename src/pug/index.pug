@@ -2,29 +2,8 @@ doctype html
 html(lang='en')
 
     head
-
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Disaggregated Accounts
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.png')
-
-        // Bootstrap Icons
-        link(href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css', rel='stylesheet')
-
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic', rel='stylesheet', type='text/css')
-
-        // SimpleLightbox plugin CSS
-        link(href='https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css', rel='stylesheet')
-
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+        // Head
+        include includes/head.pug
 
     body#page-top
 
@@ -33,10 +12,13 @@ html(lang='en')
             .container.px-4.px-lg-5.h-100
                 .row.gx-4.gx-lg-5.h-100.align-items-center.justify-content-center.text-center
                     .col-lg-8.align-self-end
-                        h1.text-black.font-weight-bold Disaggregated Economic Accounts
+                        h1.text-black.font-weight-bold Disaggregated 
+                        h1.text-black.font-weight-bold Economic 
+                        h1.text-black.font-weight-bold Accounts
                         hr.divider
                     .col-lg-8.align-self-baseline
                         a.btn.btn-primary.btn-xl(href='denmark.html') Disaggregated accounts for Denmark
+                        hr.divider-small
                         a.btn.btn-primary.btn-xl(href='research_papers.html') Research papers
 
         //-
@@ -93,9 +75,6 @@ html(lang='en')
                                         | Category
                                     .project-name
                                         | Project Name
-                                        
-        // Footer
-        include includes/footer.pug
 
         // Scripts
         include includes/scripts.pug

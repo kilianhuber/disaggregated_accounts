@@ -10,8 +10,12 @@
     .navbar-brand {
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        color: $gray-900;
+        color: $gray-600;
         font-size: 0.9rem;
+
+        &:hover {
+            color: $gray-900;
+        }
     }
 
     .navbar-nav {
@@ -25,11 +29,11 @@
 
                 &:hover,
                 &:active {
-                    color: $white;
+                    color: $gray-900;
                 }
 
                 &.active {
-                    color: $white !important;
+                    color: $primary !important;
                 }
             }
         }
@@ -54,8 +58,13 @@
                     color: fade-out($white, 0.3);
                     padding: 0 1rem;
 
-                    &:hover {
+                    &:hover,
+                    &:active {
                         color: $white;
+                    }
+    
+                    &.active {
+                        color: $white !important;
                     }
                 }
 
@@ -73,7 +82,7 @@
             background-color: $white;
 
             .navbar-brand {
-                color: $gray-900;
+                color: $gray-600;
 
                 &:hover {
                     color: $gray-900;
@@ -83,7 +92,7 @@
             .navbar-nav {
                 .nav-item {
                     .nav-link {
-                        color: $gray-900;
+                        color: $gray-600;
 
                         &:hover {
                             color: $gray-900;

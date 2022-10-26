@@ -16,12 +16,12 @@ html(lang='en')
         // Tableau map
         section#maps.page-section
             .container.px-4.px-lg-5
-                h2.text-center.mt-0 Domestic Consumer Spending Matrix
+                h2.text-center.mt-0 Intermediate trade matrix
 
         script(type="module" src="https://public.tableau.com/javascripts/api/tableau.embedding.3.latest.min.js")
 
         div(style="width:100%; height:700px; overflow:auto;")
-            tableau-viz(id="tableauViz" src="https://public.tableau.com/views/01_Domestic_consumer_spending_matrix_predicted/SpendingDestinations?:language=en-US&:display_count=n&:origin=viz_share_link" toolbar="bottom" show-tabs)
+            tableau-viz(id="tableauViz" src="https://public.tableau.com/views/20_Domesticintermediates/SupplierDestinations?:language=en-US&:display_count=n&:origin=viz_share_link" toolbar="bottom" show-tabs)
 
         // Footer
         include includes/footer.pug

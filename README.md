@@ -2,7 +2,7 @@
 
 This repo houses the scripts, assets and source files for [Disaggregated Accounts](https://www.disaggregatedaccounts.com/).
 
-<img src="src/assets/img/main_plot_white_highres.jpg" alt="" width="500"/>
+![main_plot_white_highres](src/assets/img/main_plot_white_highres.jpg)
 
 ## Usage
 
@@ -43,4 +43,4 @@ This website is adapted from [Start Bootstrap - Creative](https://github.com/sta
 
 Copyright © 2022 - Disaggregated Accounts. All rights reserved.
 
-Code released under the [MIT](https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE) license.
+Code released under the [MIT](LICENSE) license.

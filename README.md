@@ -2,7 +2,7 @@
 
 This repo houses the scripts, assets and source files for [Disaggregated Accounts](https://www.disaggregatedaccounts.com/).
 
-![main_plot_white_highres](src/assets/img/main_plot_white_highres.jpg)
+<!-- ![](src/assets/img/main_plot_white_highres.jpg) -->
 
 ## Usage
 

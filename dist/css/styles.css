@@ -11308,8 +11308,7 @@ body {
 
 .btn-xl {
   padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
-  font-weight: 700;
+  font-size: 0.95rem;
   text-transform: none;
   border: none;
   border-radius: 10rem;
@@ -11425,7 +11424,7 @@ tr:hover {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/img/main_plot_white_highres.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.04) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/img/main_plot_white_highres.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;

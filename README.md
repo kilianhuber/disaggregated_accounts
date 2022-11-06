@@ -35,6 +35,18 @@ You can view the `package.json` file to see which scripts are included.
 - `npm run start:debug` runs the project in debug mode
 - `npm start` or `npm run start` runs the project, launches a live preview in your default browser, and watches for changes made to files in `src`
 
+## Notes
+
+### Only updating the research paper
+
+If you only want to update the research paper, you can do the following:
+- Go to [`src/assets/paper`](https://github.com/jasonjiajs/disaggregated_accounts/tree/master/src/assets/paper).
+- Click 'Add file' -> 'Upload files'
+- Upload a new copy of `DEA.pdf` (the name needs to be the same; otherwise, the HTML code also needs to change to reflect the new file name).
+- Click 'Commit changes'. The new file will override the old file.
+- Wait for a few minutes. The website should be updated with the new file.
+
+
 ## Acknowledgements
 
 This website is adapted from [Start Bootstrap - Creative](https://github.com/startbootstrap/startbootstrap-creative).

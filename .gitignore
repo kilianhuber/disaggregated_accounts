@@ -2,3 +2,4 @@ node_modules
 .DS_Store
 process_data_for_tableau/*
 !process_data_for_tableau/code
+dist

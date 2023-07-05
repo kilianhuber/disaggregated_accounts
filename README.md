@@ -19,7 +19,9 @@ This repo houses the scripts, assets and source files for [Disaggregated Account
   - The csv files are saved in `src/assets/data/csv`.
   - The dta files are saved in `src/assets/data/dta`.
 - Update the Tableau notebooks in `process_data_for_tableau/output_tableau` using the new csv files from `process_data_for_tableau/output_csv`.
-- Export the Tableau notebooks to [Tableau Public](https://public.tableau.com/app/profile/jason.jia1132).
+  - If a data extract used to exist but is no longer found ('Extract Not Found'), click 'Remove the extract'. The notebook will then automatically load the updated csv file, as the csv file name is unchanged.
+- Extract the data and use the data extract: Data → [Name of dataset, last option] → Extract Data → Extract → Save (default location is fine) -> Yes (replace it if it already exists).  
+- Publish the updated Tableau notebooks to [Tableau Public](https://public.tableau.com/app/profile/jason.jia1132): Server → Publish Workbook → Connect → Sign in → Save → Yes (overwrite existing data).
 
 ### 3. Updating the website assets (`src`, `dist`, `scripts`)
 
@@ -32,6 +34,7 @@ This repo houses the scripts, assets and source files for [Disaggregated Account
 - Edit the PUG files in `src/pug` and the SCSS files in `src/scss`. The JS files in `src/js` and `scripts` can be ignored.
 - These edits will change the final outputs: the assets, HTML files and CSS files in `dist`.
 - View changes in your browser and iterate accordingly. Note that you can preview changes by opening the corresponding HTML files.
+- Once you have finished making changes, push your changes to the repo. [Netlify](https://app.netlify.com/sites/disaggregatedaccounts/overview) will recognize a new commit and automatically rebuild the website in a few minutes.
 
 #### Note: npm scripts
 
